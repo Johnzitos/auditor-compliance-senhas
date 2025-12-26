@@ -1,23 +1,28 @@
-# Password Compliance Auditor
+# Portfólio de Engenharia de Segurança da Informação
 
-Script em Python para validação de força de senhas e verificação de conformidade com políticas de segurança customizáveis.
+Repositório central para ferramentas de segurança ofensiva (Red Team) e defensiva (Blue Team), desenvolvido com foco em automação de tarefas, auditoria de conformidade e scripting.
 
-## Descrição
-Diferente de validadores simples baseados apenas em comprimento (`len`), esta ferramenta implementa:
-1.  **Cálculo de Entropia de Shannon:** Medição quantitativa da incerteza da senha em bits.
-2.  **Validação de Regras (Regex):** Checagem booleana contra requisitos de complexidade (maiúsculas, dígitos, símbolos).
-3.  **Heurística de Padrões:** Detecção de sequências comuns e strings previsíveis que falhariam em ataques de dicionário.
+O objetivo deste portfólio é demonstrar a aplicação prática de conceitos de criptografia, protocolos de rede (TCP/IP) e normas de segurança (ISO 27001, NIST SP 800-63B) através de desenvolvimento em Python e Bash.
 
-## Funcionalidades
-* Configuração de política de segurança via dicionário (`POLITICA_EMPRESA`).
-* Feedback granular sobre o motivo da rejeição (ex: entropia insuficiente vs. falta de caracteres especiais).
-* Execução via CLI (Command Line Interface).
+## Índice de Projetos
 
-## Instalação e Uso
+| ID | Ferramenta | Categoria | Stack Tecnológico | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| 01 | [Auditor de Compliance de Senhas](./Projeto-01-Auditor-Senha) | GRC / Blue Team | Python, Math, Regex | Concluído |
+| 02 | [Network Port Scanner](./Projeto-02-PortScanner) | Recon / Red Team | Python, Socket Library | Em Breve |
 
-```bash
-# Clonar repositório
-git clone [https://github.com/Johnzitos/auditor-compliance-senhas.git](https://github.com/Johnzitos/auditor-compliance-senhas.git)
+## Detalhamento Técnico
 
-# Executar
-python verificador.py
+### Competências Aplicadas
+* **Scripting & Automação:** Desenvolvimento de ferramentas CLI.
+* **Conformidade (GRC):** Tradução de requisitos de negócio e normas em regras de validação.
+* **Redes:** Manipulação de sockets TCP/IP.
+* **Criptografia:** Implementação de cálculo de Entropia.
+
+### Stack Tecnológica
+* **Linguagens:** Python 3.x, Bash Script.
+* **Ambiente:** Linux (Debian/Kali), Git/GitHub.
+
+---
+**Contato Profissional**
+* **GitHub:** https://github.com/Johnzitos
