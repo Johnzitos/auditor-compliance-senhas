@@ -1,0 +1,4 @@
+venv/
+keylog.txt
+__pycache__/
+keylog_windows.txt
