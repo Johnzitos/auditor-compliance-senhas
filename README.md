@@ -2,28 +2,30 @@
 
 Repositório central para ferramentas de segurança ofensiva (Red Team) e defensiva (Blue Team), desenvolvido com foco em automação de tarefas, auditoria de conformidade e scripting.
 
-O objetivo deste portfólio é demonstrar a aplicação prática de conceitos de criptografia, protocolos de rede (TCP/IP) e normas de segurança (ISO 27001, NIST SP 800-63B) através de desenvolvimento em Python e Bash.
+O objetivo deste portfólio é demonstrar a aplicação prática de conceitos de criptografia, protocolos de rede (TCP/IP), manipulação de sistema operacional (Kernel/Userland) e normas de segurança.
 
 ## Índice de Projetos
 
 | ID | Ferramenta | Categoria | Stack Tecnológico | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| 01 | [Auditor de Compliance de Senhas](./Projeto-01-Auditor-Senha) | GRC / Blue Team | Python, Math, Regex | Concluído |
-| 02 | [Network Port Scanner](./Projeto-02-PortScanner) | Recon / Red Team | Python, Socket Library | Em Breve |
+| 01 | [Auditor de Compliance de Senhas](./Projeto-01-Auditor-Senha) | GRC / Blue Team | Python, Math, Regex | **Concluído** |
+| 02 | [Network Port Scanner](./Projeto-02-PortScanner) | Recon / Red Team | Python, Socket Library | **Concluído** |
+| 03 | [Keylogger Multi-Plataforma](./Projeto-03-Keylogger) | Malware Dev / Red Team | Python, Kernel (evdev), WinAPI | **Concluído** |
 
 ## Detalhamento Técnico
 
 ### Competências Aplicadas
-* **Scripting & Automação:** Desenvolvimento de ferramentas CLI (Command Line Interface) para otimização de rotinas de segurança.
-* **Conformidade (GRC):** Tradução de requisitos de negócio e normas (PCI-DSS, ISO 27001) em regras de validação lógica de software.
-* **Redes de Computadores:** Manipulação de sockets para varredura de portas e análise de tráfego.
-* **Criptografia:** Implementação de cálculo de Entropia de Shannon para mensuração de força de credenciais.
+* **Linux Internals:** Interação direta com o subsistema de entrada do Kernel (`/dev/input/`) para contornar isolamento gráfico do Wayland.
+* **Redes de Computadores:** Manipulação de sockets puros (Raw Sockets) para varredura de portas e handshake TCP.
+* **Scripting Ofensivo:** Desenvolvimento de agentes de monitoramento com persistência e suporte multiplataforma (Windows/Linux).
+* **Conformidade (GRC):** Tradução de requisitos de normas (ISO 27001) em lógica de validação de software.
+* **Criptografia:** Implementação de entropia de Shannon para análise de força de senhas.
 
 ### Stack Tecnológica
 * **Linguagens:** Python 3.x, Bash Script.
-* **Ambiente:** Linux (Debian/Kali), Git/GitHub.
-* **Bibliotecas:** Re, Socket, Math, Sys.
+* **Ambiente:** Linux (Kali/Debian), Windows, Git.
+* **Bibliotecas Principais:** `evdev` (Linux Kernel), `pynput` (Hooks), `socket`, `re`, `math`.
 
 ---
 
-_Aviso Legal: As ferramentas disponibilizadas neste repositório foram desenvolvidas estritamente para fins educacionais e auditorias autorizadas._
+_Aviso Legal: As ferramentas disponibilizadas neste repositório foram desenvolvidas estritamente para fins educacionais e auditorias autorizadas.

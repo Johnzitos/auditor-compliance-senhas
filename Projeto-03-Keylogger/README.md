@@ -1,29 +1,28 @@
-# Linux Kernel Keylogger (Wayland/X11 Support)
+# Multi-Platform Keylogger (Educational)
 
-Ferramenta de monitoramento de input desenvolvida em Python que opera no nível do Kernel do Linux, contornando as restrições de isolamento de janelas impostas por compositores gráficos modernos como o Wayland.
+Ferramenta de monitoramento de keystrokes desenvolvida para fins de estudo de comportamento de malware e auditoria de endpoints. Este projeto contém duas implementações distintas para lidar com as diferenças de arquitetura entre Linux e Windows.
 
-## Diferencial Técnico
-Diferente de keyloggers tradicionais baseados em bibliotecas de alto nível (como `pynput` ou `Xlib`) que falham em sessões Wayland, esta ferramenta interage diretamente com os dispositivos de caracteres em `/dev/input/`.
+## Estrutura do Projeto
 
-* **Abordagem:** Leitura direta de eventos `EV_KEY` via `ioctl`.
-* **Compatibilidade:** Funciona em **X11**, **Wayland** e terminais puros (**TTY**).
-* **Dependência:** Biblioteca `evdev` (bindings para o subsistema de input do kernel Linux).
+| SO | Arquivo | Tecnologia | Descrição Técnica |
+| :--- | :--- | :--- | :--- |
+| **Linux** | `keylogger_linux.py` | Kernel Input (`evdev`) | Opera em baixo nível lendo `/dev/input/`. Funciona em **Wayland**, X11 e TTY. |
+| **Windows** | `keylogger_windows.py` | WinAPI Hooks (`pynput`) | Utiliza hooks de alto nível do sistema para interceptar eventos de entrada. |
 
-## Funcionalidades
-* Detecção e leitura do dispositivo de teclado (`/dev/input/eventX`).
-* Captura de keystrokes em background.
-* Salvamento de logs com timestamp preciso.
+---
 
-## Instalação e Uso
+##  Instruções para Linux
+Esta versão foi desenhada para contornar o isolamento gráfico de ambientes modernos (Wayland). Ela ignora a interface gráfica e lê os dados brutos do hardware.
 
-### Pré-requisitos
-* Linux (Kali, Debian, Ubuntu).
-* Permissões de Superusuário (Root) - Necessário para ler `/dev/input/`.
+### Requisitos
+* Python 3 + Pip
+* Permissões de Root (sudo)
 
-### Execução
+### Instalação e Uso
 ```bash
-# 1. Instalar dependências
-pip install -r requirements.txt
+# 1. Instalar dependências (dentro do venv)
+pip install evdev
 
-# 2. Executar (Requer SUDO devido ao acesso direto ao hardware)
-sudo python3 logger_kernel.py
+# 2. Executar (Requer SUDO para acesso ao hardware)
+sudo python3 keylogger_linux.py
+
