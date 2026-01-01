@@ -13,6 +13,7 @@ O objetivo deste portfólio é demonstrar a aplicação prática de conceitos de
 | 03 | [Keylogger Multi-Plataforma](./Projeto-03-Keylogger) | Malware Dev / Red Team | Python, Kernel (evdev), WinAPI | **Concluído** |
 | 04 | [Network Packet Sniffer](./Projeto-04-Sniffer) | Network / Blue Team | Python, Scapy | Em Desenvolvimento |
 **Concluído** |
+| 05 | [Web Vuln Scanner](./Projeto-05-VulnScanner) | WebSec / Red Team | Python, BeautifulSoup | Em Desenvolvimento | **Concluído** |
 
 ## Detalhamento Técnico
 
