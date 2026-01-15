@@ -1,0 +1,16 @@
+# Ignorar chaves criptográficas (Segurança Crítica)
+*.pem
+*.key
+
+# Ignorar assinaturas e arquivos cifrados de teste
+*.sig
+*.enc
+*.restored
+
+# Ignorar pastas de ambiente virtual e cache
+venv/
+__pycache__/
+*.pyc
+
+# Ignorar arquivos de sistema
+.DS_Store
