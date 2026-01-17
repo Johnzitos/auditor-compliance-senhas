@@ -15,7 +15,8 @@ O objetivo deste portfólio é demonstrar a aplicação prática de conceitos de
 | 05 | [Web Vuln Scanner](./Projeto-05-VulnScanner) | WebSec / Red Team | Python, BeautifulSoup | **Concluído** |
 | 06 | [Forensic File Scanner](./Projeto-06-FileSigScanner) | Forensics / Blue Team | Python, JSON | **Concluído** |
 | 07 | [Caesar Cipher Breaker](./Projeto-07-CaesarBreaker) | Cryptography / Scripting | Python, Math | **Concluído** |
-| 08 | [IntegrityGuard (Security Suite)](./Projeto-08-IntegrityGuard) | Cryptography / AppSec | Python, RSA, AES | - | **Em Desenvolvimento** |
+| 08 | [IntegrityGuard (Security Suite)](./Projeto-08-IntegrityGuard) | Cryptography / AppSec | Python, RSA, AES | **Em Desenvolvimento** |
+| 09 | [Sentinela (DoS Detector)](./Projeto-09-SentinelaDoS) | Network Security / Blue Team | Python, Scapy | **Em Desenvolvimento** |
 ## Detalhamento Técnico
 
 ### Competências Aplicadas
